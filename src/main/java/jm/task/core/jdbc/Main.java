@@ -1,7 +1,5 @@
 package jm.task.core.jdbc;
-
 import jm.task.core.jdbc.service.UserServiceImpl;
-
 
 public class Main {
     public static void main(String[] args) {
@@ -14,8 +12,8 @@ public class Main {
         userService.saveUser("Yuriy","Gagarin", (byte) 31);
 
         System.out.println();
-        userService.getAllUsers().forEach(System.out::println);
 
+        userService.getAllUsers().forEach(System.out::println);
         userService.cleanUsersTable();
         userService.dropUsersTable();
     }
